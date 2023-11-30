@@ -1,0 +1,14 @@
+# Menggunakan Docker Compose versi 2 atau lebih.
+version: "3"
+# Memiliki dua buah service: item-app dan item-db
+services:
+  item-app:
+    # Menggunakan image item-app dari Docker Hub (atau GitHub Packages bila menerapkan saran keempat).
+    image: ghcr.io/ziancarlos/item-app:v1
+    # (My note) Make sure the service expose 8080
+    expose:
+      - "8080"
+    # Melakukan port mapping agar da/pat diakses dari port 80 di host.
+    ports:
+      - "80:8080"
+    # Pastikan item-app hanya berjalan setel

@@ -1,0 +1,3 @@
+github repository : https://github.com/ziancarlos/a433-microservices.git
+
+github package : https://github.com/users/ziancarlos/packages/container/package/item-app
