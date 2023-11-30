@@ -6,8 +6,6 @@ services:
     # Menggunakan image item-app dari Docker Hub (atau GitHub Packages bila menerapkan saran keempat).
     image: ghcr.io/ziancarlos/item-app:v1
     # (My note) Make sure the service expose 8080
-    expose:
-      - "8080"
     # Melakukan port mapping agar dapat diakses dari port 80 di host.
     ports:
       - "80:8080"
